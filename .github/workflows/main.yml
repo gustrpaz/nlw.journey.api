@@ -28,6 +28,3 @@ jobs:
 
       - name: Build docker image
         run: docker build -t gustrpaz/nlw.journey.api:${{ steps.generate_sha.outputs.sha }} .
-				
-				# Logar no container registry
-				# Enviar imagem após
