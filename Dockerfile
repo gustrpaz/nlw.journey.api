@@ -8,7 +8,7 @@ RUN go mod download && go mod verify
 
 COPY . .
 
-RUN go build -o /bin/journey .cmd/journey/journey.go
+RUN go build -o /bin/journey ./cmd/journey/journey.go
 
 FROM scratch
 
@@ -18,4 +18,4 @@ COPY --from=builder /bin/journey .
 
 EXPOSE 8080
 
-ENTRYPOINT ["./journey"]
+ENTRYPOINT ["./journey"] 
