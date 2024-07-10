@@ -26,5 +26,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}          
 
-      - name: Build docker image
-        run: docker build -t gustrpaz/nlw.journey.api:${{ steps.generate_sha.outputs.sha }} .
+      - name: Build and Push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            gustrpaz/nlw-journey-me:${{ steps.generate_sha.outputs.sha }}
+            gustrpaz/nlw-journey-me:latest
