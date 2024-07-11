@@ -39,3 +39,15 @@ jobs:
           tags: |
             gustrpaz/nlw-journey-me:${{ steps.generate_sha.outputs.sha }}
             gustrpaz/nlw-journey-me:latest
+
+      - name: Update image helm
+        uses: fjogeleit/yaml-update-action@main
+        with:
+          branch: release
+          targetBranch: main
+          createPR: true
+          valueFile: 'deploy/values.yaml'
+          propertyPath: 'image.tag'
+          value: ${{ steps.generate_sha.outputs.sha }}
+          commitChange: true
+          message: "NEW: Update tag in values helm"
