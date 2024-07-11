@@ -9,15 +9,8 @@ metadata:
 
 stringData:
   type: git
-  url: git@github.com:gustrpaz/nlw.journey.api.git
+  url: https://github.com/gustrpaz/nlw.journey.api.git
   sshPrivateKey: |
-    -----BEGIN OPENSSH PRIVATE KEY-----
-    b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABAM0HplYi
-    R8boU3gWITbw+NAAAAEAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIKjfG2hcw3ZFy2wx
-    p7F2HyHvVRfXPLiq8p8Z5aVZo0KuAAAAoKTHsFNL74mwqIxLKmrVqMZouG/HEAbfR8wIxL
-    oQJdbX1unyWbtr/w2F7I8Bvi0qbKnYVamkibK4SWTVtNpieSVkqvrXTjh/0h3Jbv5SI0sv
-    Lq5SYjaTnAla+MF6Z9ZQjkXuWyhOTW3rhZRsiTgPH5sjX3odBc2SCWqTmvEeixJGwwXfUK
-    8Q2OllFzd6aX+s36NXjzzcFLZ3M0T7vdqNrsk=
-    -----END OPENSSH PRIVATE KEY-----
+
 
   

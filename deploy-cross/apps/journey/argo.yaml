@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:gustrpaz/nlw.journey.api.git
+    repoURL: https://github.com/gustrpaz/nlw.journey.api.git
     targetRevision: HEAD
     path: app-journey/deploy
   destination:
